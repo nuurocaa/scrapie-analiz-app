@@ -1,12 +1,29 @@
 import streamlit as st
 
-st.set_page_config(page_title="Ana Sayfa", layout="wide") 
-st.title("🐑 Scrapie Genetik Risk Analizi Uygulaması")
-st.markdown("---")
+st.set_page_config(page_title="Ana Sayfa", layout="wide")
+
+# Logo ve başlık için HTML kullanıyoruz
+st.markdown(
+    """
+    <div style="display: flex; align-items: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/tr/1/1a/Ankara_Universitesi_Logosu.png" 
+             alt="Ankara Üniversitesi Logosu" 
+             style="height: 100px; margin-right: 20px;">
+        <div>
+            <h1 style="margin: 0; font-size: 2.5em;">Scrapie Genetik Risk Analizi Uygulaması</h1>
+            <p style="margin: 0; font-size: 1.2em;">Ankara Üniversitesi Ziraat Fakültesi Zootekni Bölümü Biyometri ve Genetik Anabilim Dalı</p>
+        </div>
+    </div>
+    <hr>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown("""
 **Hoş Geldiniz!**
 Lütfen sol menüden **Risk Skoru Hesaplaması** seçeneğine tıklayarak analize başlayınız.
 """)
+
 # Menüdeki Ana Sayfa başlığını gizlemek için stil ekleniyor
 st.markdown(
     """
