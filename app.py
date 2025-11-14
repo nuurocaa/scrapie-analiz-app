@@ -2,13 +2,14 @@ import streamlit as st
 
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
-# KESİN ÇÖZÜM: GitHub Raw linki kullanıldı. Bu link, logonun GitHub deposundaki doğrudan adresidir.
+# LOGO: st.image komutu ile harici linki kesin olarak yüklüyoruz.
+# Bu, HTML/Markdown kullanmaktan daha güvenilirdir.
+st.image("https://raw.githubusercontent.com/nuurocaa/scrapie-analiz-app/main/au_logo_v2.png", width=100)
+
+# BAŞLIK BÖLÜMÜ (Artık logo burada değil, sadece metin var)
 st.markdown(
 """
 <div style="display: flex; align-items: center;">
-    <img src="https://raw.githubusercontent.com/nuurocaa/scrapie-analiz-app/main/au_logo_v2.png"
-         alt="Ankara Üniversitesi Logosu"
-         style="height: 100px; width: auto; margin-right: 20px;">
     <div>
         <h1 style="margin: 0; font-size: 2.5em;">Scrapie Genetik Risk Analizi Uygulaması</h1>
         <p style="margin: 0; font-size: 1.2em;">Ankara Üniversitesi Ziraat Fakültesi Zootekni Bölümü Biyometri ve Genetik Anabilim Dalı</p>
