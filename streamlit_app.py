@@ -5,5 +5,5 @@ st.title("Scrapie Genetik Risk Analizi Uygulaması")
 st.markdown("---")
 st.markdown("""
 **Hoş Geldiniz!**
-Lütfen sol menüden ilgili sayfaya giderek **Scrapie Risk Skoru Hesaplama**, **Scrapie Hastalığı Hakkında Genel Bilgiler** veya **Örnek Çalışmalar** sayfalarına ulaşınız.
+Lütfen sol menüden **Scrapie Hakkında Genel Bilgiler**, **Scrapie Risk Skoru Hesaplama** veya **Örnek Çalışmalar** seçeneklerinden uygun olanı tıklayınız.
 """)
