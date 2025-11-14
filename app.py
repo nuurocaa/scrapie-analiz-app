@@ -4,7 +4,7 @@ st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
 # 1. Logoyu st.image ile yükle ve başlıkları HTML ile yanına al
 # Bu yöntem, logo yüklemede en güvenilir yoldur.
-st.image("static/au_logo.png", width=100, use_column_width="always", output_format="PNG")
+st.image("static/au_logo.png", width=100, output_format="PNG")
 
 st.markdown(
     """
