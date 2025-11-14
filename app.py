@@ -2,9 +2,9 @@ import streamlit as st
 
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
-# LOGO: st.image komutu ile harici linki kesin olarak yüklüyoruz.
-# Yeni dosya adı: au_logo.png
-st.image("https://raw.githubusercontent.com/nuurocaa/scrapie-analiz-app/main/au_logo.png", width=100)
+# LOGO: Streamlit'in yerel olarak dosya okuma yöntemi kullanılıyor.
+# Dosya yolu: static/au_logo_v2.png (Konumu onaylandı)
+st.image("static/au_logo_v2.png", width=100)
 
 # BAŞLIK BÖLÜMÜ
 st.markdown(
