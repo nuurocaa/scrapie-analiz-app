@@ -6,11 +6,12 @@ import json
 import random
 
 # GeoPandas modülünü sadece ihtiyaç duyulduğunda yükle
-try:
-    import geopandas as gpd
-    GEOPANDAS_AVAILABLE = True
-except ImportError:
-    GEOPANDAS_AVAILABLE = False
+# try:
+#     import geopandas as gpd
+#     GEOPANDAS_AVAILABLE = True
+# except ImportError:
+#     GEOPANDAS_AVAILABLE = False
+GEOPANDAS_AVAILABLE = False # Şimdilik sadece False olarak ayarla
 
 
 # ---------------------------
