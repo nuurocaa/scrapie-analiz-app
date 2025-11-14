@@ -8,7 +8,7 @@ st.markdown(
 """
 <div style="display: flex; align-items: center;">
     <!-- width: auto ve height: 100px ile çözünürlük korunarak boyutlandırıldı -->
-    <img src="au_logo_v2.png"
+    <img src="static/au_logo_v2.png"
          alt="Ankara Üniversitesi Logosu"
          style="height: 100px; width: auto; margin-right: 20px;">
     <div>
