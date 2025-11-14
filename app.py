@@ -42,18 +42,4 @@ section[data-testid="stSidebar"] div[data-testid="stStatusWidget"] button[kind="
 """,
 unsafe_allow_html=True
 )
-```
-eof
 
-### 🛠️ SON ADIMLAR
-
-1.  **Yapıştırma ve Kaydetme:** Bu kodu `nano app.py` içine yapıştırdıktan sonra:
-    * Kaydedin: **$\mathbf{Ctrl + O}$** ve $\text{Enter}$.
-    * Çıkın: **$\mathbf{Ctrl + X}$.**
-
-2.  **Yükleme:** Değişiklikleri Git'e yükleyin:
-
-```bash
-git add app.py
-git commit -m "feat: Logo bulanikligi ve tum syntax hatalari saf HTML/CSS ile kesin olarak giderildi."
-git push -u origin main
