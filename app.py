@@ -35,6 +35,7 @@ section[data-testid="stSidebar"] div[data-testid="stStatusWidget"] button[kind="
 """,
 unsafe_allow_html=True
 )
+
 # Menüdeki Ana Sayfa başlığını gizlemek için stil ekleniyor
 st.markdown(
     """
