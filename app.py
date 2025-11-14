@@ -2,12 +2,11 @@ import streamlit as st
 
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
-# Logo ve başlık için tamamen saf HTML/CSS kullanılıyor.
-# KESİN ÇÖZÜM: Harici Imgur linki kullanılmıştır.
+# KESİN ÇÖZÜM: Harici Imgur Direkt Görüntü Linki kullanıldı.
 st.markdown(
 """
 <div style="display: flex; align-items: center;">
-    <img src="https://i.imgur.com/8Qp2D6Y.png"
+    <img src="https://i.imgur.com/v8tTjHn.png"
          alt="Ankara Üniversitesi Logosu"
          style="height: 100px; width: auto; margin-right: 20px;">
     <div>
