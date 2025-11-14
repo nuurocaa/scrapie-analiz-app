@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(layout="wide") 
-st.title("🐑 Scrapie ve Genetik Analiz Hakkında")
+st.title("Scrapie ve Genetik Analiz Hakkında")
 st.header("1. Scrapie Hastalığına Giriş")
 st.markdown("""
 Scrapie, koyun ve keçilerde görülen ölümcül, dejeneratif bir prion hastalığıdır. 
