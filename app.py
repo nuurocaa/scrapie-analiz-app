@@ -3,10 +3,10 @@ import streamlit as st
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
 # LOGO: st.image komutu ile harici linki kesin olarak yüklüyoruz.
-# Bu, HTML/Markdown kullanmaktan daha güvenilirdir.
-st.image("https://raw.githubusercontent.com/nuurocaa/scrapie-analiz-app/main/au_logo_v2.png", width=100)
+# Yeni dosya adı: au_logo.png
+st.image("https://raw.githubusercontent.com/nuurocaa/scrapie-analiz-app/main/au_logo.png", width=100)
 
-# BAŞLIK BÖLÜMÜ (Artık logo burada değil, sadece metin var)
+# BAŞLIK BÖLÜMÜ
 st.markdown(
 """
 <div style="display: flex; align-items: center;">
