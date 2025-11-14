@@ -49,7 +49,7 @@ with col2:
     st.markdown('<p class="main-title">Scrapie Genetik Risk Analizi Uygulaması</p>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle">Ankara Üniversitesi Ziraat Fakültesi Zootekni Bölümü Biyometri ve Genetik Anabilim Dalı</p>', unsafe_allow_html=True)
 
-st.divider()
+# st.divider() kaldırıldı
 
 # --- UYGULAMA BİLGİ VE GİRİŞ BÖLÜMÜ ---
 st.container(border=True)
@@ -65,17 +65,17 @@ with col_info:
     """)
 
 with col_cta:
-    st.markdown("---")
+    # st.markdown("---") kaldırıldı
     # Kullanıcıyı direkt risk hesaplama sayfasına yönlendiren CTA (Call to Action)
     st.markdown("**Hemen analize başlayın!**")
     # Streamlit Cloud'da yan sayfaya linkleme, ancak doğrudan yönlendirme butonları Streamlit'in çoklu sayfa mimarisinde çalışmadığı için, menüyü işaret ediyoruz.
     st.success("⬅️ Sol menüden **Risk Skoru Hesaplaması** sayfasını seçiniz.")
-    st.markdown("---")
+    # st.markdown("---") kaldırıldı
 
 
 # --- EK BİLGİ VE FOOTER ---
-st.markdown("##") # Boşluk bırakmak için
-st.info("Lütfen her analize başlamadan önce sol menüdeki **Scrapie Hastalığı Nedir** sayfasını inceleyerek genetik temeller hakkında bilgi edininiz.")
+st.markdown("##") # Boşluk bırakmak için korundu
+st.info("ℹ️ Lütfen her analize başlamadan önce sol menüdeki **Scrapie Hastalığı Nedir** sayfasını inceleyerek genetik temeller hakkında bilgi edininiz.")
 
 st.markdown("""
 <div style="text-align: center; margin-top: 30px; padding: 10px; border-top: 1px solid #eee;">
