@@ -59,7 +59,7 @@ col_info, col_cta = st.columns([3, 1])
 
 with col_info:
     st.markdown("""
-    Bu uygulama, küçükbaş hayvanlarda (koyun/keçi) görülen ve ölümcül seyreden **Scrapie (prion) hastalığına** karşı genetik risk seviyesini bilimsel veriler ışığında hesaplamak üzere tasarlanmıştır.
+    Bu uygulama, hayvanlarda (koyun/keçi vb.) görülen ve ölümcül seyreden **Scrapie (prion) hastalığına** karşı genetik risk seviyesini bilimsel veriler ışığında hesaplamak üzere tasarlanmıştır.
 
     Analiz, hastalığa karşı direnç ve hassasiyet ile ilişkilendirilen kritik **PRNP geni polimorfizmlerine** (özellikle kodon 136, 154 ve 171) dayanmaktadır. Amacımız, genotip verilerini kullanarak sürüleriniz için şeffaf ve anlaşılır bir risk skoru sağlamaktır.
     """)
