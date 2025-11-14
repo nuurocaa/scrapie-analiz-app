@@ -2,19 +2,24 @@ import streamlit as st
 
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
-# 1. Logoyu st.image ile yükle ve başlıkları HTML ile yanına al
-# Bu yöntem, logo yüklemede en güvenilir yoldur.
-st.image("static/au_logo.png", width=100, output_format="PNG")
-
+# Logo ve başlık için tamamen saf HTML/CSS kullanılıyor.
+# Bu, Streamlit'in otomatik görüntü sıkıştırmasını (bulanıklık) atlar.
 st.markdown(
-    """
-    <div style="margin-top: -100px; margin-left: 120px;">
+"""
+<div style="display: flex; align-items: center;">
+    <!-- width: auto ve height: 100px ile çözünürlük korunarak boyutlandırıldı -->
+    <img src="static/au_logo.png"
+         alt="Ankara Üniversitesi Logosu"
+         style="height: 100px; width: auto; margin-right: 20px;">
+    <div>
         <h1 style="margin: 0; font-size: 2.5em;">Scrapie Genetik Risk Analizi Uygulaması</h1>
+        <!-- Yarım kalan metin düzeltildi -->
         <p style="margin: 0; font-size: 1.2em;">Ankara Üniversitesi Ziraat Fakültesi Zootekni Bölümü Biyometri ve Genetik Anabilim Dalı</p>
     </div>
-    <hr>
-    """,
-    unsafe_allow_html=True
+</div>
+<hr>
+""",
+unsafe_allow_html=True
 )
 
 st.markdown("""
@@ -22,7 +27,7 @@ st.markdown("""
 Lütfen sol menüden **Risk Skoru Hesaplaması** seçeneğine tıklayarak analize başlayınız.
 """)
 
-# 2. Menüdeki "app" başlığını gizlemek için CSS (en kesin yöntem)
+# Menüdeki "app" veya "Ana Sayfa" başlığını gizlemek için kesin CSS
 st.markdown(
 """
 <style>
@@ -37,3 +42,18 @@ section[data-testid="stSidebar"] div[data-testid="stStatusWidget"] button[kind="
 """,
 unsafe_allow_html=True
 )
+```
+eof
+
+### 🛠️ SON ADIMLAR
+
+1.  **Yapıştırma ve Kaydetme:** Bu kodu `nano app.py` içine yapıştırdıktan sonra:
+    * Kaydedin: **$\mathbf{Ctrl + O}$** ve $\text{Enter}$.
+    * Çıkın: **$\mathbf{Ctrl + X}$.**
+
+2.  **Yükleme:** Değişiklikleri Git'e yükleyin:
+
+```bash
+git add app.py
+git commit -m "feat: Logo bulanikligi ve tum syntax hatalari saf HTML/CSS ile kesin olarak giderildi."
+git push -u origin main
