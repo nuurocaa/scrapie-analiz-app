@@ -2,11 +2,11 @@ import streamlit as st
 
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
-# KESİN ÇÖZÜM: Harici Imgur Direkt Görüntü Linki kullanıldı.
+# KESİN ÇÖZÜM: GitHub Raw linki kullanıldı. Bu link, logonun GitHub deposundaki doğrudan adresidir.
 st.markdown(
 """
 <div style="display: flex; align-items: center;">
-    <img src="https://i.imgur.com/v8tTjHn.png"
+    <img src="https://raw.githubusercontent.com/nuurocaa/scrapie-analiz-app/main/au_logo_v2.png"
          alt="Ankara Üniversitesi Logosu"
          style="height: 100px; width: auto; margin-right: 20px;">
     <div>
