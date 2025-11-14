@@ -5,7 +5,7 @@ st.title("Scrapie Genetik Risk Analizi Uygulaması")
 st.markdown("---")
 st.markdown("""
 **Hoş Geldiniz!**
-Lütfen sol menüden **Scrapie Risk Skoru Hesaplama** seçeneğine tıklayarak analize başlayınız.
+Lütfen sol menüden **Risk Skoru Hesaplaması** seçeneğine tıklayarak analize başlayınız.
 """)
 # Menüdeki Ana Sayfa başlığını gizlemek için stil ekleniyor
 st.markdown(
