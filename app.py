@@ -49,17 +49,15 @@ with col2:
     st.markdown('<p class="main-title">Scrapie Genetik Risk Analizi Uygulaması</p>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle">Ankara Üniversitesi Ziraat Fakültesi Zootekni Bölümü Biyometri ve Genetik Anabilim Dalı</p>', unsafe_allow_html=True)
 
-# st.divider() kaldırıldı
-
 # --- UYGULAMA BİLGİ VE GİRİŞ BÖLÜMÜ ---
-st.container(border=True)
+st.container() # border=True kaldırıldı
 st.subheader("Uygulama Amacı ve Kapsamı")
 
 col_info, col_cta = st.columns([3, 1])
 
 with col_info:
     st.markdown("""
-    Bu uygulama, hayvanlarda (koyun/keçi vb.) görülen ve ölümcül seyreden **Scrapie (prion) hastalığına** karşı genetik risk seviyesini bilimsel veriler ışığında hesaplamak üzere tasarlanmıştır.
+    Bu uygulama, koyun, keçi gibi hayvanlarda görülen ve ölümcül seyreden **Scrapie (prion) hastalığına** karşı genetik risk seviyesini bilimsel veriler ışığında hesaplamak üzere tasarlanmıştır.
 
     Analiz, hastalığa karşı direnç ve hassasiyet ile ilişkilendirilen kritik **PRNP geni polimorfizmlerine** (özellikle kodon 136, 154 ve 171) dayanmaktadır. Amacımız, genotip verilerini kullanarak sürüleriniz için şeffaf ve anlaşılır bir risk skoru sağlamaktır.
     """)
@@ -75,7 +73,7 @@ with col_cta:
 
 # --- EK BİLGİ VE FOOTER ---
 st.markdown("##") # Boşluk bırakmak için korundu
-st.info("ℹ️ Lütfen hanalize başlamadan önce sol menüdeki **Scrapie Hastalığı Nedir** sayfasını inceleyerek genetik temeller hakkında bilgi edininiz.")
+st.info("ℹ️ Lütfen her analize başlamadan önce sol menüdeki **Scrapie Hastalığı Nedir** sayfasını inceleyerek genetik temeller hakkında bilgi edininiz.")
 
 st.markdown("""
 <div style="text-align: center; margin-top: 30px; padding: 10px; border-top: 1px solid #eee;">
