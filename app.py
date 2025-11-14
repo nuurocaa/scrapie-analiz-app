@@ -6,7 +6,7 @@ st.set_page_config(page_title="Ana Sayfa", layout="wide")
 st.markdown(
 """
 <div style="display: flex; align-items: center;">
-    <img src="au_logo.png"
+    <img src="static/au_logo.png"
          alt="Ankara Üniversitesi Logosu"
          style="height: 100px; margin-right: 20px;">
     <div>
