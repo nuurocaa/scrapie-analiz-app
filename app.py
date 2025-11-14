@@ -3,18 +3,9 @@ import streamlit as st
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
 # Logo ve başlık için HTML kullanıyoruz
-st.markdown(
+st.markdown( # <-- Bu parantez burada açılmalı
     """
-    <div style="display: flex; align-items: center;">
-        <img src="au_logo.png"import streamlit as st
-
-st.set_page_config(page_title="Ana Sayfa", layout="wide")
-
-# Logo ve başlık için HTML kullanıyoruz
-st.markdown(
-    """
-    <div style="display: flex; align-items: center;">
-        <img src="au_logo.png"
+    <div style="display: flex; align-items: center;">        <img src="au_logo.png"
              alt="Ankara Üniversitesi Logosu"
              style="height: 100px; margin-right: 20px;">
         <div>
@@ -26,11 +17,16 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-st.markdown("""
-**Hoş Geldiniz!**
-Lütfen sol menüden **Risk Skoru Hesaplaması** seçeneğine tıklayarak analize başlayınız.
-""")
+st.markdown(
+    """
+    <style>
+    section[data-testid="stSidebar"] div[data-testid="stStatusWidget"] button[kind="secondary"] {
+        visibility: hidden;
+    }
+    </style>
+    """, # <-- BU VİRGÜL VE YENİDEN """ KAPANMASI GEREKİR
+    unsafe_allow_html=True
+)
 
 # Menüdeki Ana Sayfa başlığını gizlemek için stil ekleniyor
 st.markdown(
