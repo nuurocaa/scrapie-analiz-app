@@ -3,17 +3,15 @@ import streamlit as st
 st.set_page_config(page_title="Ana Sayfa", layout="wide")
 
 # Logo ve başlık için tamamen saf HTML/CSS kullanılıyor.
-# Bu, Streamlit'in otomatik görüntü sıkıştırmasını (bulanıklık) atlar.
+# KESİN ÇÖZÜM: Harici Imgur linki kullanılmıştır.
 st.markdown(
 """
 <div style="display: flex; align-items: center;">
-    <!-- width: auto ve height: 100px ile çözünürlük korunarak boyutlandırıldı -->
-    <img src="static/au_logo_v2.png"
+    <img src="https://i.imgur.com/8Qp2D6Y.png"
          alt="Ankara Üniversitesi Logosu"
          style="height: 100px; width: auto; margin-right: 20px;">
     <div>
         <h1 style="margin: 0; font-size: 2.5em;">Scrapie Genetik Risk Analizi Uygulaması</h1>
-        <!-- Yarım kalan metin düzeltildi -->
         <p style="margin: 0; font-size: 1.2em;">Ankara Üniversitesi Ziraat Fakültesi Zootekni Bölümü Biyometri ve Genetik Anabilim Dalı</p>
     </div>
 </div>
@@ -31,7 +29,7 @@ Lütfen sol menüden **Risk Skoru Hesaplaması** seçeneğine tıklayarak analiz
 st.markdown(
 """
 <style>
-/* Varsayılan ana sayfa başlığını tamamen gizler (genellikle ilk öğe) */
+/* Varsayılan ana sayfa başlığını tamamen gizler */
 li[data-testid="stSidebarNavListItem"]:nth-child(1) {
     display: none;
 }
@@ -42,4 +40,3 @@ section[data-testid="stSidebar"] div[data-testid="stStatusWidget"] button[kind="
 """,
 unsafe_allow_html=True
 )
-
