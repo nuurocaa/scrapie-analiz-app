@@ -1,14 +1,26 @@
 import streamlit as st
 
-st.set_page_config(page_title="Scrapie", page_icon="", layout="wide")
+st.set_page_config(layout="wide")
 st.title("Scrapie ve Genetik Analiz Hakkında")
-st.header("1. Scrapie Hastalığına Giriş")
+
 st.markdown("""
-Scrapie hastalığı koyun ve keçilerde görülen, öldürücü, bulaşıcı ve sinir sistemine zarar veren bir hastalıktır. Scrapie nedeniyle sinir sisteminde meydana gelen fonksiyon kaybının ileri safhalarında koyunlar ölmektedir. Bu hastalık 250 yıldan fazla bir zamandır bilinen (ilk defa 1732 yılında İngiltere’de farkına varılmıştır) TSE grubu bir hastalıktır (Poser 2002). Hastalığın sığırlarda ortaya çıkan formu, halk arasında deli dana hastalığı olarak bilinen BSE (Bovine spongiform encephalopathy) ise ilk defa 1986 yılında İngiltere’de görülmüştür. BSE’nin ortaya çıkışıyla ilgili en önemli hipotez, BSE’nin koyunlarda görülen scrapie hastalığından köken almış olabileceğidir. Koyun ve keçi artıkları ile kadavralarının hayvan yemi üretiminde kullanılması, BSE’nin koyunlardan sığırlara bulaştığı görüşünü destekleyen önemli bir olgudur (Goldmann et al. 1994, Hunter 1997, Arnold et al. 2002, Sipos et al. 2002, Philippe et al. 2005, Molina et al. 2006, Hunter 2007, Martin et al. 2007, Ün et al. 2008).
-Koyunlarda PrP geni 13. kromozom üzerinde yer almakta olup 3 ekzon (exon) ve 2 intron bölgesinden meydana gelmektedir. Scrapie hastalığına karşı duyarlılığı belirleyen polimorfizmler 256 amino asitlik bir protein ürününün sentezlendiği 3. ekzon bölgesinde meydana gelmektedir. PrP geninin  3. ekzon bölgesinin 136. kodonunda alenin (A) veya valin (V) amino asitleri, 154. kodonunda arjinin (R) veya histidin (H) amino asitleri, 171. kodonunda ise arjinin (R), histidin (H) veya glutamin (Q) amino asitleri bulunmaktadır. Bu üç kodonda meydana gelen amino asit değişimleri sonucunda, koyunların scrapie hastalığına karşı dayanıklılığı ya da duyarlılığı değişmektedir (Hunter 2007). 
-Genel olarak, 136. kodonda alenin ve 171. kodonda arjinin amino asitlerini kodlayan PrP alleline sahip koyunların scrapie hastalığına karşı daha dirençli, 136. kodonda valin ve 171. kodonda glutamin amino asitlerini kodlayan PrP alleline sahip koyunların ise scrapie hastalığına karşı daha duyarlı olduğu bilinmektedir. Buna karşılık 154. kodonda meydana gelen amino asit değişikliğinin, koyunların scrapie hastalığına karşı direçlilik veya duyarlılıklarını arttırmada çok önemli olmadığı düşünülmektedir. Çizelge 2.2’de özetlendiği gibi ARR/ARR genotipine sahip olan koyunlar scrapie hastalığına karşı en dirençli grubu oluştururken, VRQ/VRQ genotipine sahip olan koyunlar ise  duyarlı grubu meydana getirmektedir (Goldmann et al. 1994, Belt et al. 1995, Clouscard et al. 1995, Hunter 1997, Arnold et al. 2002, Gombojav et al. 2003, Brandsma et al. 2004, Bransma et al. 2005, Goldmann et al. 2005, O’Neill et al. 2005, Gama et al. 2006, Bronislav et al. 2007).""")
-st.subheader("2. PRNP Geni ve Dirençlilik")
-st.markdown("Prion proteinleri (PrP), genel olarak normal hücre yüzeyi glikoproteini (PrPC) olarak tanımlanmaktadır. Sinir sisteminin yer aldığı dokularda en fazla olmak üzere vücudun birçok hücresinde PrPC proteini sentezlenmektedir. PrPC proteininin sentezi endoplazmik retukulumda meydana gelmekte ve golgi cisimciği boyunca hücre yüzeyine taşınmaktadır. Normal hücre prion proteini olan PrPC proteini sentezlendikten sonra translasyon sonrası süreçlerden geçerek PrPSc proteini haline dönüşmektedir. PrPSc proteini aslında PrPC proteininin translasyon sonrası (post-translation) değişmiş bir formudur. PrPC proteini scrapie’ye neden olmaz, fakat bunun izoformu olan PrPSc proteininin merkezi sinir sisteminde birikmesi scrapie’ye neden olur. PrPC ve PrPSc proteinleri arasında biyokimyasal yapı bakımından farklılık bulunmamaktadır (Westaway et al. 1994, Belt et al. 1995, Hunter 1997, Poser 2002, Sipos et al. 2002, Tongue et al. 2004)
-Prusiner (1998), prionları “bulaşıcı, sinir sistemine zarar veren ve ölümcül bir grup hastalığa neden olan patojenler” olarak tanımlamıştır. Prion hastalıkları kalıtsal ve bulaşıcı olabildikleri gibi ara sıra ortaya çıkan hastalıklar da olabilmektedir. Bu hastalık, yukarıda ifade edildiği gibi, konakçıda sentezlenen normal prion proteinin (PrP) scrapieden sorumlu olan prion proteinine (PrPSc) dönüşmesi ve bu scrapie prion proteininin merkezi sinir sisteminde birikmesi ile ortaya çıkmaktadır. Sinir sisteminde fonksiyon kaybına neden olan değişimler ileriki safhalarda ölüme yol açmaktadır. 
-.")
-# st.image("scrapie_gen.jpg") # İlgili bir genetik şema görseli eklenebilir.
+### 1. Scrapie Hastalığına Giriş
+
+Scrapie, **keçilerde** görülen, fatal (ölümcül) ve dejeneratif bir prion hastalığıdır. Hastalık, beynin normal hücre proteinlerinin (PrPC) yanlış katlanması sonucu anormal, bulaşıcı prion proteinlerine (PrPSc) dönüşmesiyle karakterizedir. Bu prionlar sinir dokularında birikerek nörolojik semptomlara yol açar.
+
+Hastalık, sinir sistemini etkileyerek hayvanlarda kaşıntı (scrapie ismini buradan alır), titreme, koordinasyon bozukluğu ve sonunda ölüme neden olur.
+
+### 2. PRNP Geni ve Genetik Direnç
+
+Scrapie'ye karşı direnç ve hassasiyet, ağırlıklı olarak **PRNP (Prion Protein) geni** üzerinde bulunan polimorfizmler ile yakından ilişkilidir. Genotip analizi, sürülerdeki risk seviyesini belirlemede kritik rol oynar.
+
+Hastalığa karşı direnç ve hassasiyet, özellikle aşağıdaki üç kritik kodondaki (amino asit pozisyonu) varyasyonlarla belirlenir:
+
+| Kodon | Hassasiyet (Riskli) | Direnç (Korumalı) | Açıklama |
+|---|---|---|---|
+| **136** | Valin (V) | Alanin (A) | Önemli bir hassasiyet belirleyicisidir. |
+| **154** | Histidin (H) | Arjinin (R) | Direnç mekanizmasında rol oynar. |
+| **171** | Glutamin (Q) | Arjinin (R) | Koyunlarda en güçlü direnç belirleyicisidir. |
+
+Uygulamamız, genotip verilerinizi bu kodonlardaki varyasyonlara göre analiz ederek sürünüzün genetik risk skorunu hesaplar.
+""")
