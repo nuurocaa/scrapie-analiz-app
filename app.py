@@ -75,7 +75,7 @@ with col_cta:
 
 # --- EK BİLGİ VE FOOTER ---
 st.markdown("##") # Boşluk bırakmak için korundu
-st.info("ℹ️ Lütfen her analize başlamadan önce sol menüdeki **Scrapie Hastalığı Nedir** sayfasını inceleyerek genetik temeller hakkında bilgi edininiz.")
+st.info("ℹ️ Lütfen hanalize başlamadan önce sol menüdeki **Scrapie Hastalığı Nedir** sayfasını inceleyerek genetik temeller hakkında bilgi edininiz.")
 
 st.markdown("""
 <div style="text-align: center; margin-top: 30px; padding: 10px; border-top: 1px solid #eee;">
