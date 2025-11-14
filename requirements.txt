@@ -1,3 +1,4 @@
 streamlit
 pandas
-folium  # <<--- BU SATIRI EKLEYİN
+folium
+streamlit_folium  # <<--- BU SATIRI EKLEYİN
