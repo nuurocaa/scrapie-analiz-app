@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(layout="wide") 
+st.set_page_config(page_title="Scrapie", page_icon="", layout="wide")
 st.title("Scrapie ve Genetik Analiz Hakkında")
 st.header("1. Scrapie Hastalığına Giriş")
 st.markdown("""
