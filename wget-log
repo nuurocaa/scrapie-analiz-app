@@ -1,0 +1,6 @@
+--2025-11-11 13:00:47--  https://images.unsplash.com/photo-1595433562696-4e0a7e2b1234?ixlib=rb-4.0.3
+Resolving images.unsplash.com (images.unsplash.com)... 146.75.2.208, 2a04:4e42:70::720
+Connecting to images.unsplash.com (images.unsplash.com)|146.75.2.208|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-11-11 13:00:48 ERROR 404: Not Found.
+

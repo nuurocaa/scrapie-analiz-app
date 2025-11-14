@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ankara",
+        "risk": 0.55
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [32.0, 40.0],
+            [33.0, 40.0],
+            [33.0, 39.0],
+            [32.0, 39.0],
+            [32.0, 40.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "İstanbul",
+        "risk": 0.78
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [28.0, 41.0],
+            [29.0, 41.0],
+            [29.0, 40.5],
+            [28.0, 40.5],
+            [28.0, 41.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "İzmir",
+        "risk": 0.30
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [26.5, 38.0],
+            [27.5, 38.0],
+            [27.5, 37.5],
+            [26.5, 37.5],
+            [26.5, 38.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trabzon",
+        "risk": 0.88
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [39.5, 41.5],
+            [40.5, 41.5],
+            [40.5, 41.0],
+            [39.5, 41.0],
+            [39.5, 41.5]
+          ]
+        ]
+      }
+    }
+  ]
+}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Adana" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.0, 37.0],[36.0, 37.0],[36.0, 36.0],[35.0, 36.0],[35.0, 37.0]]]
+      }
+    }
+    /* Diğer illeri buraya ekleyebilirsin */
+  ]
+}
