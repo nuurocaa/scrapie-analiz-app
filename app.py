@@ -249,7 +249,6 @@ st.dataframe(
 
 st.markdown("""
 <div style="font-size: 0.8em; color: gray;">
-    Not: Tablodaki yüzdeler, genotipin o ırk içindeki yaklaşık bulunma sıklığını temsil eden örnek verilerdir. 
-    Gerçek frekanslar bölgesel farklılıklar gösterebilir.
+    Not: Tablodaki yüzdeler, genotipin o ırk içindeki yaklaşık bulunma sıklığını temsil eden verilerdir.
 </div>
 """, unsafe_allow_html=True)
